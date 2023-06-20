@@ -69,10 +69,36 @@ You must install a seperate application.
 
 1. Open a command window
 
-1. Run the Tool Install script
-   ```commandline
-   cd ~/<ORGANIZATION>/<WORKSPACE>/py_workspace/
-   python3 install.py
+1. Run the Tool Install script from the repository (std_workspace)
+   1. use python
+      ```commandline
+      cd ~/Development/<ORGANIZATION>/<WORKSPACE>/std_workspace/
+      python3 install.py
+      ```
+
+   1. or use bash
+      ```commandline
+      cd ~/Development/<ORGANIZATION>/<WORKSPACE>/std_workspace/
+      ./install.sh
+      ```
+   1. Expected Application Folders and Files
+   ```
+   + ~
+      + Development
+         + _tools
+            - git.ws.sh
+            - .env
+            + lib
+               - __dev_env.py
+               - __recorder.py
+               - __text_file_helper.py
+               - _functions.py
+               - git.branch.py
+               - git.rebase.py
+            + scripts
+               - bk.sh
+               - git.branch.sh
+               - git.rebase.sh   
    ```
 
 # Usage: 
@@ -83,22 +109,39 @@ Explain how users can use your project.
 Provide examples, code snippets, or instructions to demonstrate how to utilize the various features and functionalities. 
 Include any necessary configuration or setup steps.
 
+### Install Code Changes
+Use "install.py" to update your runtime application. 
+Make a change in the std_workspace then run "install.py" to put change in runtime application.
+```bash
+cd ~/Development/<ORGANIZATION>/<WORKSPACE>/std_workspace/
+
+./install.sh
+```
+```python
+cd ~/Development/<ORGANIZATION>/<WORKSPACE>/std_workspace/
+
+python3 ./install.py
+```
+
 ### Add Workspace
 Add a Workspace to a specified Organization
    ```commandline
    cd ~/Development/_tools
+   
    ./git.ws.sh  
    ```
 ### Add Project (GitHub Repo)
 Add Project to a specified Organiztion and  Workspace.
    ```
    cd ~/Development/<ORGANIZATION>/<WORKSPACE>/<PROJECT>/scripts
+   
    ./git.branch.sh
    ```
 ### Save Project (GitHub Repo)
 Rebase the current branch.
    ```
    cd ~/Development/<ORGANIZATION>/<WORKSPACE>/<PROJECT>/scripts
+   
    ./git.rebase.sh
    ```
 ### Archive TBD
