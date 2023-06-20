@@ -3,31 +3,96 @@ Maintain consistent work environment for multiple clients.
 Title and Description: Start with a clear and descriptive title that conveys the purpose of your project. 
 Follow it with a brief summary that explains what your project does and why it's useful or interesting.
 
-* Add Workspace
-* Add Project
-* Archive Workspace
-* Restore Archived Workspace
+* __Add Workspace__
+* __Add GitHub Project__
+* __Save GitHub Project__
+* __Archive Workspace__
+* __Restore Archived Workspace__
 
-Table of Contents: If your README is lengthy, include a table of contents to help users quickly navigate to specific sections.
+### Table of Contents: 
+TBD - If your README is lengthy, include a table of contents to help users quickly navigate to specific sections.
 
 # Installation: 
-Provide clear instructions on how to install and set up your project. 
-Include any dependencies, libraries, or tools required for the project to run smoothly. 
-If necessary, include code snippets or commands for easy copy-pasting.
-## Repository Install
+Two part installation: 
+1. install the repository and then 
+1. install the runtime application.
 
-## Application Install
+## Repository Install
+### Dependencies
+#### Python 3
+1. Install Python 3
+
+### The Repository Installation
+
+__Tasks__
+
+* Open a command window
+* Navigate to your home folder, eg cd ~/
+* Create one folder to store all development
+* Create an organization
+* Create a workspace
+* Clone ws_workspace
+ 
+__Commands__
+   
+   ```commandline
+    cd ~
+    
+    mkdir Development/
+
+    cd Development/
+    mkdir <ORGANIZATION>/
+    
+    cd <ORGANIZATION>/
+    mkdir <WORKSPACE>/
+    
+    cd <WORKSPACE>/
+    git clone  https://github.com/<<GH_ACCOUNT>>/<PROJECT>.git
+    
+    cd <PROJECT>/
+   ```
+
+## Application Runtime Install
+Once you have installed the repository,
+You must install a seperate application.
+
+1. Open a command window
+
+1. Run the Tool Install script
+   ```commandline
+   cd ~/<ORGANIZATION>/<WORKSPACE>/py_workspace/
+   python3 install.py
+   ```
 
 # Usage: 
+Once the runtime application is installed,
+
 Explain how users can use your project. 
 Provide examples, code snippets, or instructions to demonstrate how to utilize the various features and functionalities. 
 Include any necessary configuration or setup steps.
+
 ### Add Workspace
-### Add GitHub Project
-### Save GitHub Project
-### Archive 
+Add a Workspace to a specified Organization
+   ```commandline
+   cd ~/Development/_tools
+   ./git.ws.sh  
+   ```
+### Add Project (GitHub Repo)
+Add Project to a specified Organiztion and  Workspace.
+   ```
+   cd ~/Development/<ORGANIZATION>/<WORKSPACE>/<PROJECT>/scripts
+   ./git.branch.sh
+   ```
+### Save Project (GitHub Repo)
+Rebase the current branch.
+   ```
+   cd ~/Development/<ORGANIZATION>/<WORKSPACE>/<PROJECT>/scripts
+   ./git.rebase.sh
+   ```
+### Archive TBD
 Sometimes GitHib isn't enough
-### Restore Archive
+
+### Restore Archive TBD
 
 # Documentation: 
 TBD - If your project has extensive documentation, provide links or instructions on how to access it. 
