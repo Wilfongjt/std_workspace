@@ -12,6 +12,19 @@ Follow it with a brief summary that explains what your project does and why it's
 ### Table of Contents: 
 TBD - If your README is lengthy, include a table of contents to help users quickly navigate to specific sections.
 
+### Definitions
+* __\<GH_ACCOUNT>__ is a specific github account.
+* __Remote Source__ is the std_workspace repository on GitHub.
+* __Local Source__ is the std_workspace repository on your machine.
+* __Developement__ is the name of the folder where I put all my code.
+* __Organization__ is a person or a client. 
+* __\<ORGANIZATION>__ is a specific organization (no spaces).
+* __Workspace__ is a group of projects.
+* __\<WORKSPACE>__ is a specific workspace (no spaces).
+* __Project__ is a repository.
+* __\<PROJECT>__ is a specific repository (no spaces).
+* __Branch__ is the name of current repository branch.
+
 # Installation: 
 Two part installation: 
 1. install the repository and then 
@@ -31,7 +44,7 @@ __Tasks__
 * Create one folder to store all development
 * Create an organization
 * Create a workspace
-* Clone ws_workspace
+* Clone std_workspace
  
 __Commands__
    
@@ -66,6 +79,7 @@ You must install a seperate application.
 
 # Usage: 
 Once the runtime application is installed,
+the application can create an organization, a workspace, and a project.
 
 Explain how users can use your project. 
 Provide examples, code snippets, or instructions to demonstrate how to utilize the various features and functionalities. 
@@ -93,6 +107,7 @@ Rebase the current branch.
 Sometimes GitHib isn't enough
 
 ### Restore Archive TBD
+TBD
 
 # Documentation: 
 TBD - If your project has extensive documentation, provide links or instructions on how to access it. 
