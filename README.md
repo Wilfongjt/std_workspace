@@ -1,7 +1,5 @@
 # std_workspace
 Maintain consistent work environment for multiple clients.
-Title and Description: Start with a clear and descriptive title that conveys the purpose of your project. 
-Follow it with a brief summary that explains what your project does and why it's useful or interesting.
 
 * __Add Workspace__
 * __Add GitHub Project__
