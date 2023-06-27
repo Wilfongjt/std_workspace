@@ -3,4 +3,4 @@
 #source .env set
 #set +o allexport
 
-python3 ./lib/install.py
+python3 ./lib/install.tools.py
